@@ -1,0 +1,374 @@
+$naslov: 'Henny Penny', cursive;
+$font: 'Karla', sans-serif;
+//$zelena: #549127;
+$zelena:#759E38;
+//$zelena:#507225;
+//$voda:#DDE9E9;
+$voda:#dbdee0;
+
+
+.dug{
+    
+    color:$zelena !important;
+  
+}
+body{
+    font-family: $font !important;
+}
+.naslov{
+    font-family: $naslov;
+    a{
+  // font-size:30px;
+   padding-bottom: 0px;
+    }
+    margin-right:1rem;
+    margin-left:1rem;
+}
+.mojapozadina{
+    background-color:$voda;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+}
+
+.pozadinahedera{
+    height:600px;
+    background:
+    {     
+      image: url('../images/slider1.jpg');
+      size:cover;
+      position:center;
+      repeat:no-repeat;
+      attachment:fixed;
+    } 
+}
+.prozirno{
+    color: $voda;
+    //  font-size:40px;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+.posebnaslova{
+    font-size:40px;
+}
+@media screen and (max-width:840px)
+{
+    .naslov{
+        font-size:25px !important;
+    }
+}
+@media screen and(max-width:435px)
+{
+    .naslov{
+        font-size:20px !important;
+    }
+}
+@media screen and (max-width:350px)
+{
+    .carousel-caption{
+      p { display:none;}
+    padding-bottom:-5px;
+    }
+}
+@media screen and (max-width:300px)
+{
+    .carousel{display:none !important;
+    }
+}
+.whatwillyou{
+    font-size:40px;
+}
+i{
+    color:$zelena;
+}
+.futerikonice{
+    font-size:20px;
+}
+.pozadinavode{
+    background-color:$voda;
+}
+ .pozadinafutera{
+     background-color:$voda;
+ }
+ .borderfuter{ 
+     color:rgba(0, 0, 0, 0.7);
+     &:hover{
+         color:#000;
+     }
+    }
+.razmak{
+    margin-bottom:10px;
+}
+    .navbar-light .navbar-nav .nav-link{
+        color:rgba(0, 0, 0, 0.7);
+        &:hover{
+            color:#000;
+        }
+    }
+    .navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link{
+        color:#000;
+    }
+.okvirbox{
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
+    border-radius:10px;
+}
+/******************* Druga strana *****************/
+.stosirina{
+    img{
+        width:100%;
+    }
+}
+.visina{
+    img{
+        max-height:600px;
+    }
+}
+.nav-link {
+    padding: 0px;
+}
+.modal {
+    max-height: 100%;
+    background: none;
+}
+nav ul li.active{
+    background: none;
+}
+nav ul a:hover{
+    background: none;
+}
+.specijalni{
+    font-family: $naslov;
+}
+.ukrasi{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family:$naslov;
+
+    &:before, &:after
+    {
+        content: '';
+        border-top: 2px solid;
+        margin: 0 20px 0 0;
+        flex: 1 0 20px;
+        color:$zelena;
+        height:4px;
+    }
+    &:after
+    {
+        margin: 0 0 0 20px;
+    }
+    }
+.row{
+    margin-bottom:0px;
+}
+.modal .modal-content{
+    padding:0px;
+}
+.modal .modal-footer{
+    background: none;
+    height:70px;
+}
+.btn{
+    letter-spacing:  normal;
+}
+.btn-secondary{
+    background-color:$zelena !important;
+}
+.card-title{
+    margin-bottom:0px;
+    padding:15px !important;
+}
+.senka{
+    text-shadow:1px 1px 3px $zelena;
+}
+.logo{
+    width:80%;
+    padding:6.3px 0px;
+}
+.zatekst{
+    text-shadow: 0px 0px 7px #000;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius:0px 5px 5px 0px;
+}
+.material-icons{
+    font-size:30px !important;
+}
+.card {
+    border:none;
+    .card-content{
+        .card-title{
+            margin:0px;
+        }
+    }
+}
+.zahoriz{
+    flex-direction:  row;
+}
+.zakontakt{
+    img{
+        width:100%;
+        height:97%;
+    }
+}
+.input-field{
+    //margin:1rem 0px 1px 0px;
+    &:focus{
+        color:black;
+    }
+}
+
+input:not([type]):focus:not([readonly]), input[type=text]:not(.browser-default):focus:not([readonly]), input[type=password]:not(.browser-default):focus:not([readonly]), input[type=email]:not(.browser-default):focus:not([readonly]), input[type=url]:not(.browser-default):focus:not([readonly]), input[type=time]:not(.browser-default):focus:not([readonly]), input[type=date]:not(.browser-default):focus:not([readonly]), input[type=datetime]:not(.browser-default):focus:not([readonly]), input[type=datetime-local]:not(.browser-default):focus:not([readonly]), input[type=tel]:not(.browser-default):focus:not([readonly]), input[type=number]:not(.browser-default):focus:not([readonly]), input[type=search]:not(.browser-default):focus:not([readonly]), textarea.materialize-textarea:focus:not([readonly]){
+    border-bottom: 1px solid $zelena;
+    box-shadow:0 1px 0 0 $zelena;
+}
+
+input:not([type]):focus:not([readonly])+label, input[type=text]:not(.browser-default):focus:not([readonly])+label, input[type=password]:not(.browser-default):focus:not([readonly])+label, input[type=email]:not(.browser-default):focus:not([readonly])+label, input[type=url]:not(.browser-default):focus:not([readonly])+label, input[type=time]:not(.browser-default):focus:not([readonly])+label, input[type=date]:not(.browser-default):focus:not([readonly])+label, input[type=datetime]:not(.browser-default):focus:not([readonly])+label, input[type=datetime-local]:not(.browser-default):focus:not([readonly])+label, input[type=tel]:not(.browser-default):focus:not([readonly])+label, input[type=number]:not(.browser-default):focus:not([readonly])+label, input[type=search]:not(.browser-default):focus:not([readonly])+label, textarea.materialize-textarea:focus:not([readonly])+label{
+    color:$zelena;
+    font-size:15px;
+}
+
+input:not([type]), input[type=text]:not(.browser-default), input[type=password]:not(.browser-default), input[type=email]:not(.browser-default), input[type=url]:not(.browser-default), input[type=time]:not(.browser-default), input[type=date]:not(.browser-default), input[type=datetime]:not(.browser-default), input[type=datetime-local]:not(.browser-default), input[type=tel]:not(.browser-default), input[type=number]:not(.browser-default), input[type=search]:not(.browser-default), textarea.materialize-textarea{
+    border-bottom:1px solid rgba(0, 0, 0, 0.5);
+}
+
+.input-field>label{
+    color: rgba(0, 0, 0, 0.5);
+}
+.portfolio{
+    color:$zelena;
+    &:hover{
+        color:$zelena; 
+    }
+}
+.navbar-collapse{
+    z-index: 16;
+    background-color:$voda;
+   //width:100% !important;
+   padding:0px;
+}
+.linkovi{
+    border:none !important ;
+}
+.navbar-light .navbar-toggler{
+ //  margin-bottom:5px !important;
+  // line-height: normal;
+   &-icon{
+       color:$zelena !important;
+   }
+  // height:56px;
+  margin-left:1rem;
+}
+.navbar{
+    padding:0px;
+}
+button:focus{
+    background-color:$zelena;
+    outline:none;
+}
+nav, nav .nav-wrapper i, nav a.sidenav-trigger, nav a.sidenav-trigger i{
+    line-height: normal;
+}
+.navbar{
+    height:58px;
+}
+.nav-link{
+    padding:0px;
+}
+.linkovi{
+  //  padding-left:1.1rem;
+    padding:15px 1.1rem;
+   // border-top:1px solid rgba(0, 0, 0, 0.5);
+}
+.card{
+    .card-reveal{
+        padding:20px;
+    }
+}
+.card-title{
+    margin-bottom:10px;
+    margin-left:0px !important;
+}
+.row::after{
+    content: none;
+}
+.btn-outline-success{
+    width:50%;
+    color: rgba(0, 0, 0, 0.9);
+  //  text-shadow:0px 0px 1px #000;
+    letter-spacing:0.5px;
+    border-color:$zelena;
+    &:hover{
+        background-color:$zelena;
+        color:$voda;
+    }
+}
+.gornjirazmak{
+    padding-top:80px;
+}
+.donjirazmak{
+    padding-bottom:80px;
+}
+.malirazmak{
+    margin-bottom:60px;
+    padding-bottom:30px;
+}
+.dodatak{
+    padding-bottom:40px;
+}
+
+/********** About ***************/
+.malo{
+        img
+{
+        max-width:50% !important;
+}
+}
+@media screen and (max-width:767px)
+{
+    .kolona{
+        padding-bottom:25px;
+    }
+}
+.opis{
+    font-size:17px;
+}
+
+/* CAROUSEL */
+
+.carousel-inner{
+    max-height:600px;
+}
+.carousel-caption{
+    //bottom:40%;
+    //top:40%;
+}
+.carousel{
+    overflow: visible;
+    width: inherit;
+    height: inherit;
+    perspective: none;
+    transform-style: initial;
+    transform-origin: 0;
+}
+.carousel .carousel-item{
+    visibility:  visible;
+    width:100% !important;
+    height:inherit;
+    position: relative !important;
+}
+.visina{
+    max-height:600px !important;
+}
+.carousel-caption{
+    background-color:rgba(0, 0, 0, 0.7);
+    border-radius:10px;
+    margin-bottom:40px !important;
+}
+.carousel-indicators li{
+    width:15px !important;
+    height:15px !important;
+    border-radius:60%;
+    margin-left:7px;
+    margin-right:7px;
+}
